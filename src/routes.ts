@@ -85,6 +85,7 @@ export class Routes {
         questionId,
       );
     });
+    
     this.path.get('knowledgeArea/:id/questions', async (req, _res) => {
       const knowledgeAreaId = Number(
         req.pathParameters ? req.pathParameters.id : null,
