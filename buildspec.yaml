@@ -1,5 +1,9 @@
 version: 0.2
 
+env:
+  secrets-manager:
+    DB_HOST: env:DB_HOST
+
 phases:
   install:
     commands:
