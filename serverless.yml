@@ -19,10 +19,10 @@ provider:
   timeout: 12
   environment:
     NODE_ENV: ${env:NODE_ENV}
-    DB_NAME: ${ssm:/aws/reference/secretsmanager/arn:aws:secretsmanager:ap-southeast-1:474717861439:secret:env-WzmthE~true}.DB_NAME
-    DB_USER: ${ssm:/aws/reference/secretsmanager/arn:aws:secretsmanager:ap-southeast-1:474717861439:secret:env-WzmthE~true}.DB_USER
+    DB_NAME: ${env:DB_NAME}
+    DB_USER: ${env:DB_USER}
     DB_PASSWORD: ${env:DB_PASSWORD}
-    DB_HOST: ${ssm:/aws/reference/secretsmanager/arn:aws:secretsmanager:ap-southeast-1:474717861439:secret:env-WzmthE~true}.DB_HOST
+    DB_HOST: ${ssm:/aws/reference/secretsmanager/env-WzmthE~true}.DB_HOST
     DB_PORT: ${env:DB_PORT}
 
 functions:
