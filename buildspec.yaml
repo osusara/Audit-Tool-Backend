@@ -3,6 +3,7 @@ version: 0.2
 env:
   secrets-manager:
     DB_HOST: env:DB_HOST
+    DB_USER: env:DB_USER
 
 phases:
   install:
